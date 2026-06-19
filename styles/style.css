@@ -9,6 +9,11 @@ body {
     color: rgb(255, 255, 255);
 }
 
+.separador {
+    margin: 50px auto;
+    width: 70%;
+}
+
 /* Seccion Barra de navegacion */
 #navbar {
     display: flex;
@@ -137,7 +142,6 @@ a {
 #Plataformas-titulo {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
     font-family: 'Cinzel', serif;
 }
 
@@ -179,7 +183,6 @@ a {
     display: flex;
     justify-content: center;
     font-family: 'Cinzel', serif;
-    margin-top: 50px;
 }
 
 #character-title h2 {
@@ -245,7 +248,6 @@ a {
 #diario-title {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
 }
 
 #diario-title h2 {
@@ -281,4 +283,312 @@ a {
 #diario-descripcion-title h3 {
     font-family: 'Cinzel', serif;
     border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+/* Seccion DLC's */
+#dlc-title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
+}
+
+#dlc-title h2 {
+    border-bottom: 2px solid rgb(203, 213, 225);
+}
+
+#section-dlc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    gap: 30px;
+}
+
+.dlc-container {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    gap: 30px;
+}
+
+.dlc-target {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(222, 203, 154);
+    border-radius: 15px;
+    background-color: rgb(11, 13, 16);
+    width: 40%;
+}
+
+.dlc-target-title {
+    background-color: rgb(222, 203, 154);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.dlc-target img {
+    width: 200px;
+    border: 2px solid rgb(222, 203, 154);
+    border-radius: 15px;
+}
+
+.dlc-target-parrafo {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    width: 70%;
+}
+
+/* Seccion Audio */
+#music-title {
+    display: flex;
+    justify-content: center;
+}
+
+#music-title h2 {
+    border-bottom: 2px solid rgb(203, 213, 225);
+    font-family: 'Cinzel', serif;
+}
+
+#audio-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    padding-bottom: 400px;
+}
+
+.pista-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.pista-audio {
+    width: 25%;
+    padding: 20px;
+    background-color: rgb(11, 13, 16);
+    border: 2px solid rgb(222, 203, 154);
+    border-radius: 15px;
+}
+
+#pista-1 {
+    transform: translateY(0px);
+}
+
+#pista-2 {
+    transform: translateY(200px);
+}
+
+#pista-3 {
+    transform: translateY(200px);
+}
+
+#pista-4 {
+    transform: translateY(400px);
+}
+
+/* Seccion Secuela */
+#secuela-title {
+    display: flex;
+    justify-content: center;
+}
+
+#secuela-title h2 {
+    border-bottom: 2px solid rgb(203, 213, 225);
+    font-family: 'Cinzel', serif;
+}
+
+#secuela-section {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#secuela-container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(222, 203, 154);
+    border-radius: 15px;
+    width: 50%;
+    background-color: rgb(11, 13, 16);
+}
+
+#secuela-parrafo {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#secuela-parrafo h3 {
+    font-family: 'Cinzel', serif;
+    border-bottom: 2px solid rgb(222, 203, 154);
+}
+
+#secuela-parrafo p {
+    padding: 0px 40px 20px 40px;
+}
+
+#secuela-img {
+    display: flex;
+    justify-content: end;
+    width: 40%;
+}
+
+#secuela-img img {
+    width: 100%;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-left: 1px solid rgb(222, 203, 154);
+}
+
+#secuela-container-2 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(222, 203, 154);
+    border-radius: 15px;
+}
+
+#secuela-trailer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#secuela-trailer h2 {
+    font-family: 'Cinzel', serif;
+}
+
+#secuela-trailer iframe {
+    border-radius: 15px;
+}
+
+#trailer-title {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(222, 203, 154);
+    color: rgb(0, 0, 0);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Seccion Team Cherry */
+#teamcherry-title {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(222, 203, 154);
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#teamcherry-title h2 {
+    font-family: 'Cinzel', serif;
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+#teamcherry-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#teamcherry-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(11, 13, 16);
+    border-radius: 15px;
+    border: 2px solid rgb(222, 203, 154);
+}
+
+#teamcherry-img img {
+    width: 250px;
+}
+
+#teamcherry-parrafo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#teamcherry-equipo {
+    width: 80%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(222, 203, 154);
+    border-radius: 15px;
+}
+
+#equipo-title {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(222, 203, 154);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#equipo-title h2 {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+#equipo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.equipo-target {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 20px;
+    border: 2px solid rgb(222, 203, 154);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(11, 13, 16);
+}
+
+.equipo-target-img img {
+    width: 200px;
+}
+
+.equipo-nombre {
+    font-family: 'Cinzel', serif;
+}
+
+.equipo-parrafo {
+    width: 80%;
+    text-align: justify;
+}
+
+/* Seccion creado por */
+#footer-section {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid rgb(203, 213, 225);
+    background-color: rgb(0, 12, 31);
 }
