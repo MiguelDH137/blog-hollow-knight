@@ -173,6 +173,12 @@ a {
     background-color: rgb(11, 13, 16);
 }
 
+.tarjeta-plataforma:hover {
+    transform: scale(1.1);
+    background-color: rgb(222, 203, 154);
+    color: rgb(0, 0, 0);
+}
+
 .tarjeta-plataforma h2 {
     margin-bottom: 2px;
     border-bottom: 1px solid rgb(222, 203, 154);
@@ -364,7 +370,6 @@ a {
     justify-content: center;
     gap: 30px;
     padding: 40px 20px;
-    padding-bottom: 400px;
 }
 
 .pista-container {
@@ -382,21 +387,6 @@ a {
     border-radius: 15px;
 }
 
-#pista-1 {
-    transform: translateY(0px);
-}
-
-#pista-2 {
-    transform: translateY(200px);
-}
-
-#pista-3 {
-    transform: translateY(200px);
-}
-
-#pista-4 {
-    transform: translateY(400px);
-}
 
 /* Seccion Secuela */
 #secuela-title {
@@ -591,4 +581,102 @@ a {
     justify-content: center;
     border-top: 2px solid rgb(203, 213, 225);
     background-color: rgb(0, 12, 31);
+}
+
+@media screen and (max-width: 480px) {
+    #hero-texto {
+        position: absolute;
+        font-size: 9px;
+        top: 10%;
+        right: 7%;
+    }
+
+    a {
+        font-size: 10px;
+    }
+
+    #description-section {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+    }
+    #tarjeta-categoria {
+        width: 40%;
+        margin-right: 0px;
+    }
+
+    #plataforma-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tarjeta-plataforma {
+        width: 60%;
+    }
+
+    #character-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .character-target {
+        width: 60%;
+    }
+
+    #diario-contenedor1 {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    #diario-contenedor1 p {
+        padding: 20px;
+        text-align: justify;
+    }
+    #diario-contenedor1 img {
+        width: 200px;
+    }
+
+    .dlc-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dlc-target {
+        width: 80%;
+    }
+
+    .pista-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pista-audio {
+        width: 80%;
+    }
+
+    #secuela-container-1 {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #secuela-parrafo {
+        width: 90%;
+    }
+    #secuela-img img {
+        border: 2px solid rgb(222, 203, 154);
+        border-radius: 100%;
+    }
+    #secuela-trailer iframe {
+        width: 100%;
+    }
+
+    #teamcherry-parrafo p {
+        text-align: justify;
+        padding: 20px;
+    }
+    #equipo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .equipo-target {
+        width: 90%;
+    }
 }
