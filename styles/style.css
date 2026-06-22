@@ -35,6 +35,11 @@ a {
     font-family: 'Cinzel', serif;
 }
 
+#nav-links a:hover {
+    transform: scale(1.1);
+    color: rgb(222, 203, 154);
+}
+
 /* Seccion Hero */
 #hero-section {
     display: flex;
@@ -174,9 +179,10 @@ a {
 }
 
 .tarjeta-plataforma:hover {
-    transform: scale(1.1);
+    transform: translateY(-4px);
     background-color: rgb(222, 203, 154);
     color: rgb(0, 0, 0);
+    box-shadow: 0px 15px 30px -5px rgba(255, 255, 255, 0.7);
 }
 
 .tarjeta-plataforma h2 {
@@ -663,6 +669,7 @@ a {
     #secuela-img img {
         border: 2px solid rgb(222, 203, 154);
         border-radius: 100%;
+        margin-bottom: 20px;
     }
     #secuela-trailer iframe {
         width: 100%;
@@ -672,11 +679,17 @@ a {
         text-align: justify;
         padding: 20px;
     }
+    #teamcherry-img img{
+        margin-top: 20px;
+    }
     #equipo-container {
         flex-direction: column;
         align-items: center;
     }
     .equipo-target {
         width: 90%;
+        border-radius: 0px;
+        border: 0px;
     }
+
 }
