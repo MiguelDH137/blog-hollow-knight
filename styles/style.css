@@ -236,11 +236,16 @@ a {
     align-items: center;
 }
 
+.character-target:hover {
+    background: rgb(222, 203, 154);
+    color: rgb(0, 0, 0);
+
+}
+
 .character-target p {
     text-align: justify;
     padding: 10px 20px;
     margin: 0;
-    background-color: rgb(11, 13, 16);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -333,6 +338,13 @@ a {
     width: 40%;
 }
 
+.dlc-target:hover {
+    background: rgb(222, 203, 154);
+    color: rgb(0, 0, 0);
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px -5px rgb(203, 213, 225);
+}
+
 .dlc-target-title {
     background-color: rgb(222, 203, 154);
     color: rgb(0, 0, 0);
@@ -393,6 +405,12 @@ a {
     border-radius: 15px;
 }
 
+.pista-audio:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px -5px rgb(203, 213, 225);
+    background: rgb(222, 203, 154);
+    color: rgb(0, 0, 0);
+}
 
 /* Seccion Secuela */
 #secuela-title {
@@ -519,6 +537,13 @@ a {
     border: 2px solid rgb(222, 203, 154);
 }
 
+#teamcherry-container:hover {
+    background: rgb(222, 203, 154);
+    color: rgb(0, 0, 0);
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px -5px rgb(203, 213, 225);
+}
+
 #teamcherry-img img {
     width: 250px;
 }
@@ -568,6 +593,12 @@ a {
     background-color: rgb(11, 13, 16);
 }
 
+.equipo-target:hover {
+    background: rgb(222, 203, 154);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 15px 30px -5px rgb(203, 213, 225);
+}
+
 .equipo-target-img img {
     width: 200px;
 }
@@ -581,13 +612,6 @@ a {
     text-align: justify;
 }
 
-/* Seccion creado por */
-#footer-section {
-    display: flex;
-    justify-content: center;
-    border-top: 2px solid rgb(203, 213, 225);
-    background-color: rgb(0, 12, 31);
-}
 
 /* Seccion Historia de desarrollo */
 #historia-titulo h2 {
@@ -610,6 +634,13 @@ a {
     border-radius: 15px;
 }
 
+.contenedor-historia:hover {
+    background: rgb(222, 203, 154);
+    color: rgb(0, 0, 0);
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px -5px rgb(203, 213, 225);
+}
+
 .historia-parrafo {
     text-align: justify;
     padding: 0px 20px;
@@ -622,7 +653,17 @@ a {
     border: 1px solid rgb(203, 213, 225);
 }
 
+/* Seccion creado por */
+#footer-section {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid rgb(203, 213, 225);
+    background-color: rgb(0, 12, 31);
+}
+
+/* Break-points */
 @media screen and (max-width: 480px) {
+    /* hero seccion */
     #hero-texto {
         position: absolute;
         font-size: 9px;
@@ -634,6 +675,7 @@ a {
         font-size: 10px;
     }
 
+    /* Seccion Descripcion */
     #description-section {
         flex-direction: column;
         align-items: center;
@@ -644,6 +686,7 @@ a {
         margin-right: 0px;
     }
 
+    /* Seccion Platafomras */
     #plataforma-section {
         flex-direction: column;
         align-items: center;
@@ -652,6 +695,7 @@ a {
         width: 60%;
     }
 
+    /* Seccion Personajes */
     #character-section {
         flex-direction: column;
         align-items: center;
@@ -660,6 +704,7 @@ a {
         width: 60%;
     }
 
+    /* Seccion diario del cazador */
     #diario-contenedor1 {
         flex-direction: column;
         align-items: center;
@@ -673,15 +718,17 @@ a {
         width: 200px;
     }
 
+    /* Seccion DLC */
     .dlc-container {
         flex-direction: column;
         align-items: center;
     }
 
     .dlc-target {
-        width: 80%;
+        width: 100%;
     }
 
+    /* Seccion Musica */
     .pista-container {
         flex-direction: column;
         align-items: center;
@@ -691,6 +738,11 @@ a {
         width: 80%;
     }
 
+    .audio-barra audio {
+        width: 70%;
+    }
+
+    /* Seccion Secuela */
     #secuela-container-1 {
         flex-direction: column;
         width: 90%;
@@ -708,6 +760,7 @@ a {
         width: 100%;
     }
 
+    /* Seccion equipo de desarrollo */
     #teamcherry-parrafo p {
         text-align: justify;
         padding: 20px;
@@ -725,6 +778,7 @@ a {
         border: 0px;
     }
 
+    /* Seccion Historia de desarrollo */
     .contenedor-historia {
         flex-direction: column;
     }
