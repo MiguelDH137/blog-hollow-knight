@@ -653,10 +653,88 @@ a {
     border: 1px solid rgb(203, 213, 225);
 }
 
+/* Seccion de guias y canales recomendados */
+#section-guias-title {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+#section-guias {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.guia-target {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    background: rgb(11, 13, 16);
+    border: 2px solid rgb(222, 203, 154);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.guia-target:hover {
+    background: rgb(222, 203, 154);
+    color: rgb(0, 0, 0);
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px -5px rgb(203, 213, 225);
+}
+
+.contenedor-guia {
+    display: flex;
+    gap: 30px;
+}
+
+.guia-target-img {
+    display: flex;
+    align-items: center;    
+}
+
+#guia-target-img-1 img {
+    border-radius: 100%;
+    border: 2px solid rgb(203, 213, 225);
+}
+
+#guia-target-img-3 img {
+    width: 200px;
+}
+
+.guia-target-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.guia-target-texto h3 {
+    font-family: 'Cinzel';
+    text-align: left;
+}
+
+.guia-target-texto p {
+    text-align: justify;
+}
+
+.guia-target-link {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(203, 213, 225);
+}
+
+.guia-target-link a:hover {
+    color: rgb(0, 0, 0);
+    transform: scale(1.2);
+}
+
 /* Seccion creado por */
 #footer-section {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
     border-top: 2px solid rgb(203, 213, 225);
     background-color: rgb(0, 12, 31);
 }
@@ -782,12 +860,21 @@ a {
     .contenedor-historia {
         flex-direction: column;
     }
+    #contenedor-historia-2 {
+        flex-direction: column-reverse;
+    }
     .historia-img {
         display: flex;
         justify-content: center;
     }
     .historia-img img {
         width: 70%;
+    }
+
+    /* Seccion de canales recomendados */
+    .contenedor-guia {
+    flex-direction: column;
+    align-items: center;
     }
 
 }
